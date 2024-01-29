@@ -1,0 +1,6 @@
+/root/llvm+ast/pasinterpreter/build/CMakeFiles/rebuild_cache.dir
+/root/llvm+ast/pasinterpreter/build/CMakeFiles/pasi.dir
+/root/llvm+ast/pasinterpreter/build/CMakeFiles/acc_gen.dir
+/root/llvm+ast/pasinterpreter/build/CMakeFiles/edit_cache.dir
+/root/llvm+ast/pasinterpreter/build/CMakeFiles/intrinsics_gen.dir
+/root/llvm+ast/pasinterpreter/build/CMakeFiles/omp_gen.dir

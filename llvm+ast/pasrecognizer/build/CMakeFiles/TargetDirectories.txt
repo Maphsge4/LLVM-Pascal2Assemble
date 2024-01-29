@@ -1,0 +1,8 @@
+/root/llvm+ast/pasrecognizer/build/CMakeFiles/install/strip.dir
+/root/llvm+ast/pasrecognizer/build/CMakeFiles/install/local.dir
+/root/llvm+ast/pasrecognizer/build/CMakeFiles/pasr_test.dir
+/root/llvm+ast/pasrecognizer/build/CMakeFiles/list_install_components.dir
+/root/llvm+ast/pasrecognizer/build/CMakeFiles/pasrecognizer.dir
+/root/llvm+ast/pasrecognizer/build/CMakeFiles/edit_cache.dir
+/root/llvm+ast/pasrecognizer/build/CMakeFiles/rebuild_cache.dir
+/root/llvm+ast/pasrecognizer/build/CMakeFiles/install.dir
