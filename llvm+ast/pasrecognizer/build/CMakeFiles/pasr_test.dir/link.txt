@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/pasr_test.dir/test/main.cpp.o  -o pasr_test libpasrecognizer.a -lantlr4-runtime 
+/usr/bin/c++ CMakeFiles/pasr_test.dir/test/main.cpp.o -o pasr_test  libpasrecognizer.a -lantlr4-runtime 

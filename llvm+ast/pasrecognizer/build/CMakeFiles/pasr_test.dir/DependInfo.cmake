@@ -1,29 +1,18 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/root/llvm+ast/pasrecognizer/test/main.cpp" "/root/llvm+ast/pasrecognizer/build/CMakeFiles/pasr_test.dir/test/main.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_CXX
-  "FULL_IMPL"
   )
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../src/antlr4cpp_generated_src/pasLexer"
-  "../src/antlr4cpp_generated_src/pasParser"
-  "../include"
-  "../include/antlr4-runtime"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/work/mcx/LLVM-Pascal2Assemble/llvm+ast/pasrecognizer/test/main.cpp" "CMakeFiles/pasr_test.dir/test/main.cpp.o" "gcc" "CMakeFiles/pasr_test.dir/test/main.cpp.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/root/llvm+ast/pasrecognizer/build/CMakeFiles/pasrecognizer.dir/DependInfo.cmake"
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

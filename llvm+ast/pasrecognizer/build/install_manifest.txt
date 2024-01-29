@@ -1,7 +1,7 @@
-/root/llvm+ast/install/lib/libpasrecognizer.a
-/root/llvm+ast/install/include/pasrecognizer/error_reporter.h
-/root/llvm+ast/install/include/pasrecognizer/syntax_tree.h
-/root/llvm+ast/install/include/pasrecognizer/syntax_tree_builder.h
-/root/llvm+ast/install/include/pasrecognizer/error_listener.h
-/root/llvm+ast/install/include/pasrecognizer/recognizer.h
-/root/llvm+ast/install/cmake/pasrecognizer-config.cmake
+/home/work/mcx/LLVM-Pascal2Assemble/llvm+ast/install/lib/libpasrecognizer.a
+/home/work/mcx/LLVM-Pascal2Assemble/llvm+ast/install/include/pasrecognizer/error_listener.h
+/home/work/mcx/LLVM-Pascal2Assemble/llvm+ast/install/include/pasrecognizer/syntax_tree_builder.h
+/home/work/mcx/LLVM-Pascal2Assemble/llvm+ast/install/include/pasrecognizer/syntax_tree.h
+/home/work/mcx/LLVM-Pascal2Assemble/llvm+ast/install/include/pasrecognizer/error_reporter.h
+/home/work/mcx/LLVM-Pascal2Assemble/llvm+ast/install/include/pasrecognizer/recognizer.h
+/home/work/mcx/LLVM-Pascal2Assemble/llvm+ast/install/cmake/pasrecognizer-config.cmake
