@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/bin/cmake
+CMAKE_COMMAND = /mnt/old/home/work/mcx/cmake-3.27.4/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/bin/cmake -E rm -f
+RM = /mnt/old/home/work/mcx/cmake-3.27.4/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/work/mcx/LLVM-Pascal2Assemble/llvm+ast/pasinterpreter/b
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	/usr/local/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/mnt/old/home/work/mcx/cmake-3.27.4/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/usr/local/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/mnt/old/home/work/mcx/cmake-3.27.4/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -128,6 +128,32 @@ intrinsics_gen: cmake_check_build_system
 intrinsics_gen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/intrinsics_gen.dir/build.make CMakeFiles/intrinsics_gen.dir/build
 .PHONY : intrinsics_gen/fast
+
+#=============================================================================
+# Target rules for targets named omp_gen
+
+# Build rule for target.
+omp_gen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 omp_gen
+.PHONY : omp_gen
+
+# fast build rule for target.
+omp_gen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/omp_gen.dir/build.make CMakeFiles/omp_gen.dir/build
+.PHONY : omp_gen/fast
+
+#=============================================================================
+# Target rules for targets named acc_gen
+
+# Build rule for target.
+acc_gen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 acc_gen
+.PHONY : acc_gen
+
+# fast build rule for target.
+acc_gen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/acc_gen.dir/build.make CMakeFiles/acc_gen.dir/build
+.PHONY : acc_gen/fast
 
 #=============================================================================
 # Target rules for targets named pasi
@@ -246,7 +272,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... acc_gen"
 	@echo "... intrinsics_gen"
+	@echo "... omp_gen"
 	@echo "... pasi"
 	@echo "... src/assembly_builder.o"
 	@echo "... src/assembly_builder.i"

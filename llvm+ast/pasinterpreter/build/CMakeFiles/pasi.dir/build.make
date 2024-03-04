@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/bin/cmake
+CMAKE_COMMAND = /mnt/old/home/work/mcx/cmake-3.27.4/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/bin/cmake -E rm -f
+RM = /mnt/old/home/work/mcx/cmake-3.27.4/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -140,44 +140,43 @@ pasi: CMakeFiles/pasi.dir/src/assembly_builder.cpp.o
 pasi: CMakeFiles/pasi.dir/src/runtime.cpp.o
 pasi: CMakeFiles/pasi.dir/src/runtime/io.c.o
 pasi: CMakeFiles/pasi.dir/build.make
-pasi: /usr/lib/llvm-10/lib/libLLVMCore.a
-pasi: /usr/lib/llvm-10/lib/libLLVMMCJIT.a
-pasi: /usr/lib/llvm-10/lib/libLLVMX86CodeGen.a
-pasi: /usr/lib/llvm-10/lib/libLLVMX86AsmParser.a
-pasi: /usr/lib/llvm-10/lib/libLLVMX86Desc.a
-pasi: /usr/lib/llvm-10/lib/libLLVMX86Disassembler.a
-pasi: /usr/lib/llvm-10/lib/libLLVMX86Info.a
-pasi: /usr/lib/llvm-10/lib/libLLVMX86Utils.a
-pasi: /usr/lib/llvm-10/lib/libLLVMExecutionEngine.a
-pasi: /usr/lib/llvm-10/lib/libLLVMRuntimeDyld.a
-pasi: /usr/lib/llvm-10/lib/libLLVMAsmPrinter.a
-pasi: /usr/lib/llvm-10/lib/libLLVMDebugInfoDWARF.a
-pasi: /usr/lib/llvm-10/lib/libLLVMCFGuard.a
-pasi: /usr/lib/llvm-10/lib/libLLVMGlobalISel.a
-pasi: /usr/lib/llvm-10/lib/libLLVMSelectionDAG.a
-pasi: /usr/lib/llvm-10/lib/libLLVMCodeGen.a
-pasi: /usr/lib/llvm-10/lib/libLLVMTarget.a
-pasi: /usr/lib/llvm-10/lib/libLLVMBitWriter.a
-pasi: /usr/lib/llvm-10/lib/libLLVMScalarOpts.a
-pasi: /usr/lib/llvm-10/lib/libLLVMAggressiveInstCombine.a
-pasi: /usr/lib/llvm-10/lib/libLLVMInstCombine.a
-pasi: /usr/lib/llvm-10/lib/libLLVMTransformUtils.a
-pasi: /usr/lib/llvm-10/lib/libLLVMAnalysis.a
-pasi: /usr/lib/llvm-10/lib/libLLVMProfileData.a
-pasi: /usr/lib/llvm-10/lib/libLLVMObject.a
-pasi: /usr/lib/llvm-10/lib/libLLVMBitReader.a
-pasi: /usr/lib/llvm-10/lib/libLLVMCore.a
-pasi: /usr/lib/llvm-10/lib/libLLVMRemarks.a
-pasi: /usr/lib/llvm-10/lib/libLLVMBitstreamReader.a
-pasi: /usr/lib/llvm-10/lib/libLLVMTextAPI.a
-pasi: /usr/lib/llvm-10/lib/libLLVMMCParser.a
-pasi: /usr/lib/llvm-10/lib/libLLVMMCDisassembler.a
-pasi: /usr/lib/llvm-10/lib/libLLVMMC.a
-pasi: /usr/lib/llvm-10/lib/libLLVMBinaryFormat.a
-pasi: /usr/lib/llvm-10/lib/libLLVMDebugInfoCodeView.a
-pasi: /usr/lib/llvm-10/lib/libLLVMDebugInfoMSF.a
-pasi: /usr/lib/llvm-10/lib/libLLVMSupport.a
-pasi: /usr/lib/llvm-10/lib/libLLVMDemangle.a
+pasi: /usr/lib/llvm-11/lib/libLLVMCore.a
+pasi: /usr/lib/llvm-11/lib/libLLVMMCJIT.a
+pasi: /usr/lib/llvm-11/lib/libLLVMX86CodeGen.a
+pasi: /usr/lib/llvm-11/lib/libLLVMX86AsmParser.a
+pasi: /usr/lib/llvm-11/lib/libLLVMX86Desc.a
+pasi: /usr/lib/llvm-11/lib/libLLVMX86Disassembler.a
+pasi: /usr/lib/llvm-11/lib/libLLVMX86Info.a
+pasi: /usr/lib/llvm-11/lib/libLLVMExecutionEngine.a
+pasi: /usr/lib/llvm-11/lib/libLLVMRuntimeDyld.a
+pasi: /usr/lib/llvm-11/lib/libLLVMAsmPrinter.a
+pasi: /usr/lib/llvm-11/lib/libLLVMDebugInfoDWARF.a
+pasi: /usr/lib/llvm-11/lib/libLLVMCFGuard.a
+pasi: /usr/lib/llvm-11/lib/libLLVMGlobalISel.a
+pasi: /usr/lib/llvm-11/lib/libLLVMSelectionDAG.a
+pasi: /usr/lib/llvm-11/lib/libLLVMCodeGen.a
+pasi: /usr/lib/llvm-11/lib/libLLVMTarget.a
+pasi: /usr/lib/llvm-11/lib/libLLVMBitWriter.a
+pasi: /usr/lib/llvm-11/lib/libLLVMScalarOpts.a
+pasi: /usr/lib/llvm-11/lib/libLLVMAggressiveInstCombine.a
+pasi: /usr/lib/llvm-11/lib/libLLVMInstCombine.a
+pasi: /usr/lib/llvm-11/lib/libLLVMTransformUtils.a
+pasi: /usr/lib/llvm-11/lib/libLLVMAnalysis.a
+pasi: /usr/lib/llvm-11/lib/libLLVMObject.a
+pasi: /usr/lib/llvm-11/lib/libLLVMBitReader.a
+pasi: /usr/lib/llvm-11/lib/libLLVMTextAPI.a
+pasi: /usr/lib/llvm-11/lib/libLLVMProfileData.a
+pasi: /usr/lib/llvm-11/lib/libLLVMCore.a
+pasi: /usr/lib/llvm-11/lib/libLLVMRemarks.a
+pasi: /usr/lib/llvm-11/lib/libLLVMBitstreamReader.a
+pasi: /usr/lib/llvm-11/lib/libLLVMMCParser.a
+pasi: /usr/lib/llvm-11/lib/libLLVMMCDisassembler.a
+pasi: /usr/lib/llvm-11/lib/libLLVMMC.a
+pasi: /usr/lib/llvm-11/lib/libLLVMBinaryFormat.a
+pasi: /usr/lib/llvm-11/lib/libLLVMDebugInfoCodeView.a
+pasi: /usr/lib/llvm-11/lib/libLLVMDebugInfoMSF.a
+pasi: /usr/lib/llvm-11/lib/libLLVMSupport.a
+pasi: /usr/lib/llvm-11/lib/libLLVMDemangle.a
 pasi: CMakeFiles/pasi.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/work/mcx/LLVM-Pascal2Assemble/llvm+ast/pasinterpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable pasi"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pasi.dir/link.txt --verbose=$(VERBOSE)

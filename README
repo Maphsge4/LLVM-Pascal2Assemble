@@ -1,0 +1,57 @@
+## Pascal编译器安装说明
+1. 首先进入pasrecognizer文件夹（借助访问器生成ast抽象语法树）
+```
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=/home/work/mcx/LLVM-Pascal2Assemble/llvm+ast/install ..
+LIBRARY_PATH=/home/work/mcx/LLVM-Pascal2Assemble/antlr4-cpp/dist make install
+```
+
+备注：
+DCMAKE_INSTALL_PREFIX recognizer的安装目录，可自由选择
+LIBRARY_PATH antlr-cpp的runtime库
+路径还是用绝对路径比较好，否则貌似会报挺多错
+
+2. 进入pasinterpreter文件夹（用于将生成的ast翻译为llvm ir代码，进而得到目标代码）
+```
+mkdir build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Debug -DLLVM_DIR=/usr/lib/llvm-11/lib/cmake/llvm -Dpasrecognizer_DIR=/home/work/mcx/LLVM-Pascal2Assemble/llvm+ast/install/cmake ..
+LIBRARY_PATH=/home/work/mcx/LLVM-Pascal2Assemble/antlr4-cpp/dist make -j
+```
+
+备注：
+LLVM用14版本的高了，要用11。也不可以用llvm-project编译出来的那个install文件夹里的llvm库，好像版本也高了。
+DCMAKE_BUILD_TYPE 编译类型为Debug
+DLLVM_DIR llvm库的位置，此处使用llvm 11.0.0 的release版本 约为2.4g
+Dpasrecognizer_DIR recognizer的安装位置，接1
+LIBRARY_PATH antlr-cpp的runtime库
+
+## Pascal编译器使用说明
+
+在pasinterpreter的build目录下执行如下程序
+生成llvm IR中间代码：
+```
+LD_LIBRARY_PATH=/home/work/mcx/LLVM-Pascal2Assemble/antlr4-cpp/dist ./pasi -emit-llvm ../test/test.pas
+```
+（test.pas 应更换为具体测试pas文件）
+
+直接执行（目前已是可执行程序pasi）
+```
+LD_LIBRARY_PATH=/home/work/mcx/LLVM-Pascal2Assemble/antlr4-cpp/dist ./pasi ../test/test.pas   
+```
+（直接编译执行目标程序）
+
+生成汇编代码 test.ll
+```
+LD_LIBRARY_PATH=/home/work/mcx/LLVM-Pascal2Assemble/antlr4-cpp/dist ./pasi -emit-llvm ../test/test.pas >./test.ll
+```
+汇编代码优化
+```
+opt test.ll -S --O3 >tset.ll
+```
+等等还有
+```
+llc test.ll
+llvm-as test.ll
+```

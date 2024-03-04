@@ -4,6 +4,9 @@ add_definitions(-DFULL_IMPL)
 
 SET (CMAKE_CXX_STANDARD 14)
 
+# 2.26新加的
+# add_definitions(-std=c++14)
+
 # 会在llvm+ast/install/cmake目录下寻找pasrecognizer-config.cmake文件
 # 找到了，就对了；找不到，就报错
 # 然后你在cmake命令里面-Dpasrecognizer_DIR这个参数要和这个package名对应！
